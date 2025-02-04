@@ -1,0 +1,13 @@
+{
+  "name": "chatbot-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start-chatbot\" \"npm run start-server\" \"npm run start-client\"",
+    "start-chatbot": "cd chatbot && node chatbot.js",
+    "start-server": "cd server && node server.js",
+    "start-client": "cd client && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
